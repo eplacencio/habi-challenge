@@ -1,0 +1,32 @@
+.registryBg {
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registryBg .registryBgImg {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.registryBox {
+  z-index: 1;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 800px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 40px 50px;
+  border-radius: 20px;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1110px) {
+  .registryBg .registryBgImg {
+    width: auto;
+    height: 100%;
+  }
+}
